@@ -17,11 +17,11 @@ import Analytics from '@vercel/analytics/astro';
 		<link rel="manifest" href="/site.webmanifest" />
 		<meta name="generator" content={Astro.generator} />
 		<title>The Universal Observer</title>
+		<SpeedInsights />
+		<Analytics />
 	</head>
 	<body>
 		<slot />
-		<SpeedInsights />
-		<Analytics />
 	</body>
 </html>
 
