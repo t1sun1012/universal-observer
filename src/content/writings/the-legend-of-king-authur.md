@@ -2,7 +2,7 @@
 title: "The Legend of King Authur"
 category: "Poetry"
 snippet: "On the throne there was the British Ruler King Authur. With his sword Excalibur glowing, waiting for triumph of glory."
-imageUrl: "https://static.wikia.nocookie.net/fategrandorder/images/b/bf/CE265.webp/revision/latest?cb=20221013155836"
+imageUrl: "https://www.theamateurmediablog.com/uploads/3/8/3/9/3839731/image02_orig.png"
 readingTime: "3 min read"
 ---
 On the throne there was the British Ruler King Authur.

@@ -2,7 +2,7 @@
 title: "Man from the Underground"
 category: "Poetry"
 snippet: "Hatred, rooted and buried Now everything in his mind."
-imageUrl: "https://www.bbc.com/culture/article/20160809-watchmen-the-moment-comic-books-grew-up"
+imageUrl: "https://i0.wp.com/eternalisedofficial.com/wp-content/uploads/2021/11/d0b7d0b0d0bfd0b8d181d0bad0b8-3-770x360-1.jpg?resize=750%2C351&ssl=1"
 readingTime: "4 min read"
 ---
 Hatred, rooted and buried

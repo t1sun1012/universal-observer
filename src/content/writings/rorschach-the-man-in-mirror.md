@@ -2,7 +2,7 @@
 title: "Rorschach the Man in Mirror"
 category: "Poetry"
 snippet: "Look in thy glass, and tell the face thou viewest / The glass reflecting a sheer division of black and whiteness"
-imageUrl: "https://stock.adobe.com/search?k=man+mirror+sad"
+imageUrl: "https://i.pinimg.com/736x/da/a4/3a/daa43aa0c895fc7fbcfa69eb3618282b.jpg"
 readingTime: "2 min read"
 ---
 Look in thy glass, and tell the face thou viewest
