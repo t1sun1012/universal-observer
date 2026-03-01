@@ -14,27 +14,23 @@ export interface Writing {
   quote?: string;
 }
 
-// Hero Background Component with Grain and Gradient
+// Hero Background Component with Starry Night
 function HeroBackground() {
   return (
     <div className="absolute inset-0 z-0 overflow-hidden select-none pointer-events-none">
-       {/* Animated Gradient Orb */}
-       <motion.div 
-         animate={{ 
-           scale: [1, 1.2, 1],
-           opacity: [0.5, 0.3, 0.5],
-           rotate: [0, 90, 0]
-         }}
-         transition={{ 
-           duration: 20,
-           repeat: Infinity,
-           ease: "easeInOut" 
-         }}
-         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vh] h-[80vh] rounded-full bg-gradient-to-tr from-[#E5E5E5] via-[#D4D4D4] to-transparent dark:from-[#222222] dark:via-[#1a1a1a] dark:to-transparent blur-[120px] mix-blend-multiply dark:mix-blend-screen opacity-60 dark:opacity-40"
-       />
+       {/* Van Gogh's Starry Night Background */}
+       <div className="absolute inset-0 z-0">
+         <img 
+           src="https://images.unsplash.com/photo-1682944596871-892f20a98275?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFycnklMjBuaWdodCUyMHZhbiUyMGdvZ2glMjBhcnR8ZW58MXx8fHwxNzcyMzI4MjM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+           alt="Starry Night by Van Gogh"
+           className="w-full h-full object-cover"
+         />
+         <div className="absolute inset-0 bg-indigo-950/30 mix-blend-multiply"></div>
+         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#cd5858]/10 to-[#F9F5EB] dark:to-[#0f172a]"></div>
+       </div>
        
        {/* Noise Texture */}
-       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]" 
+       <div className="absolute inset-0 opacity-[0.15] mix-blend-overlay" 
          style={{ 
            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` 
          }}
@@ -51,26 +47,41 @@ function EssayCard({ writing }: { writing: Writing }) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col gap-4 p-8 border border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors bg-white dark:bg-neutral-900"
+      className="col-span-12 md:col-span-6 lg:col-span-4 group relative overflow-hidden min-h-[480px]"
     >
-      <div className="flex justify-between items-start mb-4">
-        <Feather className="w-5 h-5 opacity-40" />
-        <span className="text-xs uppercase tracking-widest opacity-40 font-sans">{writing.readingTime}</span>
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={writing.imageUrl} 
+          alt={writing.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        />
+        <div className="absolute inset-0 bg-neutral-900/60 group-hover:bg-neutral-900/50 transition-colors duration-500" />
+        {/* Grain Overlay */}
+        <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` }}></div>
       </div>
-      
-      <h3 className="text-2xl font-serif font-medium leading-tight mb-2">
-        <a href={`/read/${writing.id}`} className="hover:underline decoration-1 underline-offset-4">
-          {writing.title}
-        </a>
-      </h3>
-      
-      <p className="text-sm font-serif leading-relaxed text-justify opacity-70 line-clamp-4">
-        {writing.snippet}
-      </p>
 
-      <div className="mt-auto pt-6 flex items-center text-xs uppercase tracking-widest opacity-40">
-        <span>Read Essay</span>
-        <ArrowRight className="w-3 h-3 ml-2" />
+      {/* Content */}
+      <div className="relative z-10 flex flex-col gap-4 p-8 h-full text-neutral-100">
+        <div className="flex justify-between items-start mb-4">
+          <Feather className="w-5 h-5 opacity-70" />
+          <span className="text-xs uppercase tracking-widest opacity-70 font-sans">{writing.readingTime}</span>
+        </div>
+        
+        <h3 className="text-2xl font-serif font-medium leading-tight mb-2">
+          <a href={`/read/${writing.id}`} className="hover:underline decoration-1 underline-offset-4">
+            {writing.title}
+          </a>
+        </h3>
+        
+        <p className="text-sm font-serif leading-relaxed text-justify opacity-80 line-clamp-4">
+          {writing.snippet}
+        </p>
+
+        <div className="mt-auto pt-6 flex items-center text-xs uppercase tracking-widest opacity-70 group-hover:opacity-100 transition-opacity">
+          <span>Read Essay</span>
+          <ArrowRight className="w-3 h-3 ml-2" />
+        </div>
       </div>
     </motion.div>
   );
@@ -90,7 +101,7 @@ function FictionCard({ writing }: { writing: Writing }) {
           <img 
             src={writing.imageUrl} 
             alt={writing.title}
-            className="w-full h-full object-cover grayscale contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-cover contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-700"
           />
           <div className="absolute inset-0 bg-neutral-900/40 mix-blend-multiply"></div>
           {/* Grain Overlay */}
@@ -138,24 +149,38 @@ function PoetryCard({ writing }: { writing: Writing }) {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="col-span-12 md:col-span-6 flex flex-col items-center justify-center py-16 px-8 text-center border-t border-b border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900/50 transition-colors"
+      className="col-span-12 md:col-span-6 group relative overflow-hidden min-h-[400px] flex flex-col items-center justify-center py-16 px-8 text-center border-t border-b border-neutral-200 dark:border-neutral-800"
     >
-      <ScrollText className="w-6 h-6 mb-6 opacity-30" />
-      
-      <span className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4 font-sans">{writing.readingTime}</span>
-      
-      <h3 className="text-3xl md:text-4xl font-serif italic mb-6">
-        <a href={`/read/${writing.id}`} className="hover:opacity-60 transition-opacity">
-          {writing.title}
-        </a>
-      </h3>
-      
-      <p className="text-sm font-serif leading-loose opacity-60 max-w-xs mx-auto whitespace-pre-line">
-        {writing.snippet}
-      </p>
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={writing.imageUrl} 
+          alt={writing.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        />
+        <div className="absolute inset-0 bg-neutral-900/60 group-hover:bg-neutral-900/50 transition-colors duration-500" />
+        {/* Grain Overlay */}
+        <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` }}></div>
+      </div>
 
-      <div className="mt-8 opacity-20">
-        •
+      <div className="relative z-10 flex flex-col items-center text-neutral-100">
+        <ScrollText className="w-6 h-6 mb-6 opacity-70" />
+        
+        <span className="text-[10px] uppercase tracking-[0.3em] opacity-70 mb-4 font-sans">{writing.readingTime}</span>
+        
+        <h3 className="text-3xl md:text-4xl font-serif italic mb-6">
+          <a href={`/read/${writing.id}`} className="hover:opacity-80 transition-opacity">
+            {writing.title}
+          </a>
+        </h3>
+        
+        <p className="text-sm font-serif leading-loose opacity-80 max-w-xs mx-auto whitespace-pre-line">
+          {writing.snippet}
+        </p>
+
+        <div className="mt-8 opacity-50">
+          •
+        </div>
       </div>
     </motion.div>
   );
@@ -180,16 +205,16 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
   const poetry = writings.filter(w => w.category === 'Poetry');
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] dark:bg-[#111111] text-[#2B2B2B] dark:text-[#EAEAEA] transition-colors duration-500 font-serif selection:bg-[#2B2B2B] selection:text-[#FAF8F5] dark:selection:bg-[#EAEAEA] dark:selection:text-[#111111]">
+    <div className="min-h-screen bg-[#F9F5EB] dark:bg-[#0f172a] text-slate-900 dark:text-slate-100 transition-colors duration-500 font-serif selection:bg-amber-200 selection:text-amber-950 dark:selection:bg-indigo-900 dark:selection:text-indigo-100">
       
       {/* Navigation / Header */}
-      <nav className="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center mix-blend-difference text-[#FAF8F5] pointer-events-none">
-        <div className="text-xl tracking-widest uppercase font-bold pointer-events-auto mix-blend-difference">
+      <nav className="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center text-white pointer-events-none mix-blend-difference">
+        <div className="text-xl tracking-widest uppercase font-bold pointer-events-auto text-[#cd5858]">
           The Universal Observer
         </div>
         
         <div className="flex items-center gap-8 pointer-events-auto">
-          <div className="hidden md:flex gap-8 text-sm tracking-widest uppercase mix-blend-difference">
+          <div className="hidden md:flex gap-8 text-sm tracking-widest uppercase">
             <a href="#essays" className="hover:opacity-70 transition-opacity">Essays</a>
             <a href="#fiction" className="hover:opacity-70 transition-opacity">Fiction</a>
             <a href="#poetry" className="hover:opacity-70 transition-opacity">Poetry</a>
@@ -197,7 +222,7 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
           
           <button 
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-white/10 transition-colors mix-blend-difference text-white"
+            className="p-2 rounded-full hover:bg-white/10 transition-colors text-white"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
@@ -206,36 +231,44 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex flex-col items-center justify-center px-6 overflow-hidden">
+      <section className="relative min-h-[80vh] flex flex-col items-center justify-center px-6 overflow-hidden text-white">
         <HeroBackground />
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="z-10 max-w-4xl text-center"
+          className="z-10 max-w-4xl text-center drop-shadow-md"
         >
-          <span className="block text-sm md:text-base tracking-[0.3em] uppercase mb-6 opacity-60 font-sans">Est. 2023</span>
+          <span className="block text-sm md:text-base tracking-[0.3em] uppercase mb-6 opacity-80 font-sans">Est. 2023</span>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium tracking-tighter mb-8 leading-[0.9]">
             The Universal<br/>Observer
           </h1>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed opacity-70 font-light italic">
-            "To pay attention, this is our endless and proper work."
-          </p>
+          <p className="max-w-2xl mx-auto leading-relaxed opacity-90 font-light italic text-[#000000] text-[32px]">"To pay attention, this is my boundless work."</p>
         </motion.div>
 
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce drop-shadow-md"
         >
-          <ArrowRight className="rotate-90 w-6 h-6 opacity-50" />
+          <ArrowRight className="rotate-90 w-6 h-6 opacity-70" />
         </motion.div>
       </section>
 
       {/* Main Content Area - 12 Column Grid */}
-      <main className="max-w-[1400px] mx-auto px-6 pb-32 space-y-32">
+      <main className="relative max-w-[1400px] mx-auto px-6 pb-32">
+        {/* Background Texture */}
+        <div className="absolute inset-0 z-0 opacity-20 pointer-events-none mix-blend-multiply select-none overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1553627558-d738c10f89da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcGVuJTIwb2xkJTIwYm9vayUyMGZsaXBwaW5nJTIwcGFnZXMlMjBhbnRpcXVlJTIwdmludGFnZXxlbnwxfHx8fDE3NzIzMjg5NTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
+            alt="Antique book with flipped pages" 
+            className="w-full h-full object-cover grayscale sepia-[.2]"
+          />
+        </div>
+
+        <div className="relative z-10 space-y-32">
         
         {/* Category 1: Philosophical Essays */}
         <section id="essays" className="scroll-mt-32">
@@ -294,11 +327,17 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
           </div>
         </section>
 
+        </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#2B2B2B] dark:bg-black text-[#FAF8F5] py-24 px-6 text-center transition-colors duration-500">
-        <h2 className="text-3xl font-medium mb-8">The Universal Observer</h2>
+      <footer className="bg-[#1C1917] text-[#FAF8F5] py-24 px-6 text-center transition-colors duration-500">
+        <h2 className="text-3xl font-medium mb-8 italic">The Universal Observer</h2>
+        <div className="flex justify-center gap-8 text-sm tracking-widest uppercase opacity-60 mb-12 font-sans">
+          <a href="#" className="hover:text-white hover:opacity-100 transition-colors">Twitter</a>
+          <a href="#" className="hover:text-white hover:opacity-100 transition-colors">Instagram</a>
+          <a href="#" className="hover:text-white hover:opacity-100 transition-colors">Substack</a>
+        </div>
         <p className="text-xs opacity-30 tracking-widest font-sans">© 2023 All Rights Reserved.</p>
       </footer>
     </div>

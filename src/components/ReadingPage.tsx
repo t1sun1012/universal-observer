@@ -1,11 +1,8 @@
-// import { writings } from '../data/writings';
 import { motion } from 'motion/react';
 import { ArrowLeft } from 'lucide-react';
 import type { Writing } from './LandingPage';
 
 export function ReadingPage({ writing }: { writing?: Writing }) {
-  // const writing = writings.find((w) => w.id === id);
-
   if (!writing) {
     return (
         <div className="min-h-screen flex items-center justify-center">

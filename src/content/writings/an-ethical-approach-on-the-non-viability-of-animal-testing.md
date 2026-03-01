@@ -2,7 +2,7 @@
 title: "An ethical approach on the non-viability of animal testing"
 category: "Essay"
 snippet: "The E.P.A."
-imageUrl: "https://images.pexels.com/photos/3735767/pexels-photo-3735767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+imageUrl: "https://images.pexels.com/photos/8533140/pexels-photo-8533140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 readingTime: "21 min read"
 ---
 The E.P.A. Administrator Andrew Wheeler proposed the agency plans to reduce the number of studies that involve mammal testing by 30 percent by 2025 and to eliminate the studies entirely by 2035. This public denouncement of animal testing gave rise to respective concerns over the issue of animal ethics. Is animal testing morally permissible? Should, and could it be justified? Those are the key argument that I will argue about in this essay.
