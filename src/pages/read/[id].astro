@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { AppReading } from '../../components/AppWrappers';
+import { getCollection } from 'astro:content';
+import type { Writing } from '../../components/LandingPage';
+
+export async function getStaticPaths() {
+  const writings = await getCollection('writings');
+  return writings.map((writing) => ({
+    params: { id: writing.id.replace(/\.md$/, '') },
+    props: { writing },
+  }));
+}
+
+const { writing: collectionWriting } = Astro.props;
+const writing: Writing = {
+  id: collectionWriting.id,
+  ...collectionWriting.data,
+  content: collectionWriting.body, // Pass content if needed for rendering, though ReadingPage expects split content
+};
+---
+
+<Layout>
+  <AppReading client:load writing={writing} />
+</Layout>

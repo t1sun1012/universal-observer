@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { AppLanding } from '../components/AppWrappers';
+import { getCollection } from 'astro:content';
+import type { Writing } from '../components/LandingPage';
+
+const writingsCollection = await getCollection('writings');
+const writings: Writing[] = writingsCollection.map((w) => ({
+  id: w.id.replace(/\.md$/, ''),
+  ...w.data,
+}));
+---
+
+<Layout>
+  <AppLanding client:load writings={writings} />
+</Layout>
