@@ -333,11 +333,6 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
       {/* Footer */}
       <footer className="bg-[#1C1917] text-[#FAF8F5] py-24 px-6 text-center transition-colors duration-500">
         <h2 className="text-3xl font-medium mb-8 italic">The Universal Observer</h2>
-        <div className="flex justify-center gap-8 text-sm tracking-widest uppercase opacity-60 mb-12 font-sans">
-          <a href="#" className="hover:text-white hover:opacity-100 transition-colors">Twitter</a>
-          <a href="#" className="hover:text-white hover:opacity-100 transition-colors">Instagram</a>
-          <a href="#" className="hover:text-white hover:opacity-100 transition-colors">Substack</a>
-        </div>
         <p className="text-xs opacity-30 tracking-widest font-sans">© 2023 All Rights Reserved.</p>
       </footer>
     </div>

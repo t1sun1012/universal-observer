@@ -1,11 +1,11 @@
 ---
 title: "The Boundless"
 category: "Fiction"
-snippet: "## Chapter One A Bloody Christmas Every child of my generation knew of Sam, son of the landlord Saggy William. They did two things to him across his short, sorrow filled life."
+snippet: "Chapter One A Bloody Christmas Every child of my generation knew of Sam, son of the landlord Saggy William. They did two things to him across his short, sorrow filled life."
 imageUrl: "https://images.stockcake.com/public/3/d/a/3daea32b-916d-40f3-8c46-8e299cc1caa2_large/winter-wonderland-stockcake.jpg"
 readingTime: "34 min read"
 ---
-## Chapter One
+Chapter One
 A Bloody Christmas
 
 Every child of my generation knew of Sam, son of the landlord Saggy William. They did two things to him across his short, sorrow filled life. First, they bashed him on his tenth birthday, Christmas Day, and broke three of his teeth. I was there, watching. His blood dripped, staining the Christmas night scarlet. He died young, but something of him has never ceased to haunt my ears: the sound of his pleading. As they beat him, he begged so pathetically for mercy.
@@ -40,7 +40,7 @@ It was us. It was me. We killed the Williams. I was part of it.
 
 And now, so many years later, as snow begins to fall again, I remember. I remember the cookies, the envy, the violence. I remember how a gift could become a death sentence. I am older now, and the snow feels like a veil over that old blood. But some stains never wash away.
 
-## Chapter Two
+Chapter Two
 An Encounter in Snow
 
 Yesterday was the second snowy season ever to come about in this world, or maybe it was today. I was only vaguely informed. The streets were dumped with a gelid velvet, all the usual landmarks and detached villas homogenized into a stream of white cascade. The flakes, the weather, all combined, were choking me. I was so overwhelmed with having to wander a long way to the bleak location where I often referred to as home. Deep in my mind, of course, I would love a caring car to rescue me from such an indifferent predicament and deliver me straight to the side of that antique stove. I envisioned a campfire ongoing.
@@ -60,7 +60,7 @@ My thought ceased at the moment. A liquified darkness seeped from my veins. My l
 While the penultimate sound echoed in mind:
 'Who are you?'
 
-## Chapter Three
+Chapter Three
 The Office and The Offer
 
 My name is Karl Joseph Anderson, an average man, no different from the others in this town, and I sat perfectly rigid at an unfamiliar desk.
@@ -119,7 +119,7 @@ To my ears, it sounds like a riddle spun from starlight and shadow. Yet my mind,
 
 Of course. She had always been able to read what lay written in the silent language of my soul.
 
-## Chapter Four
+Chapter Four
 Wound
 
 The woman straightened, her movement fluid as a dancer's. I found myself mirroring her unconsciously. We had been speaking for what felt like an eternity in that cramped office, its only window a high pane of glass through which no light is allowed to penetrate. Once again, as ten years prior, time had lost all meaning. I felt like a prisoner in a cell, bound by invisible chains.
@@ -250,7 +250,7 @@ I left, saying no more. A feeling of quiet rejoicing bloomed inside me. A lucky 
 
 And so began my Odyssey back home in the delicate, mechanized vehicle.
 
-## Chapter Five
+Chapter Five
 The Old Man and the Sea
 
 The vibration of the car, the purr of its engine, these sensations were alien yet familiar. My hands remembered the weight of a steering wheel, the resistance of gears. They also felt the smooth leather of the seat, the warmth from the vents, all of which contrasted so violently with the world outside. My mind began to drift. It drifted past the snow, past the shop, past the office. My car stagnant; I had yet to leave, but I am thinking about leaving my family. I will most certainly escape. My children would stay, and I would be gone. I stayed and he was gone. Now it was my turn.
@@ -275,7 +275,7 @@ From that day, between my father and me, there came to lie a long, long road, pa
 
 The memory faded, leaving the faint taste of salt on my lips. I rested inside the car, my shell. It was different kind of vessel, carrying me not across water, but through snow, toward a different kind of judgement.
 
-## Chapter Six
+Chapter Six
 A Little World On a Christmas Night
 
 I was imagining how I would make move the luxury. In fact, I thought about it, probably three, maybe countless times. Step on the gas was my dream come true. My heart had been set ablaze. With every touch of the steering wheel, the joy renews itself. The air conditioning was turned to its maximum, yet it couldn't begin to cool the fire of my exhilaration. A kind of fanatic, perhaps even lunatic, euphoria burned within me, one I can only assume stemmed from the sensation of a dream fulfilled, or from the primal satisfaction of desire indulged and greed fulfilled.
