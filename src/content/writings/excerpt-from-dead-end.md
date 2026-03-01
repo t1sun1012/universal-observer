@@ -2,7 +2,7 @@
 title: "Excerpt from Dead End"
 category: "Fiction"
 snippet: "## Chapter 1: Opening Day … Three days and fifteen seconds ago was when they called an official end to the closure period lasted for ten years or so, and we fail to recognize that"
-imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/57/Paul_F%C3%BCrst%2C_Der_Doctor_Schnabel_von_Rom_%28Holl%C3%A4nder_version%29.png"
+imageUrl: "https://www.sciencealert.com/images/2024/07/PlagueMask.jpg"
 readingTime: "4 min read"
 ---
 ## Chapter 1: Opening Day
