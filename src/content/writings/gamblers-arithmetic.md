@@ -1,6 +1,6 @@
 ---
 title: "Gambler’s arithmetic"
-category: "Essay"
+category: "Fiction"
 snippet: "As a child, I lingered in doorways, eyes fixated on the spectral men hunched over green tables."
 imageUrl: "https://images.pexels.com/photos/3370381/pexels-photo-3370381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 readingTime: "4 min read"

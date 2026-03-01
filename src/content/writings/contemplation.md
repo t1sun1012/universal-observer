@@ -1,5 +1,5 @@
 ---
-title: "Workshop Reflection"
+title: "Contemplation"
 category: "Essay"
 snippet: "Two years ago, I picked up the habit of dedicating a piece of writing to my late friend, Kevin."
 imageUrl: "https://images.pexels.com/photos/6143818/pexels-photo-6143818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
