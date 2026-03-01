@@ -333,6 +333,11 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
       {/* Footer */}
       <footer className="bg-[#1C1917] text-[#FAF8F5] py-24 px-6 text-center transition-colors duration-500">
         <h2 className="text-3xl font-medium mb-8 italic">The Universal Observer</h2>
+        <div className="mb-8">
+          <a href="mailto:xinyuzhu2005@gmail.com" className="text-xs tracking-widest font-sans opacity-50 hover:opacity-100 transition-opacity">
+            xinyuzhu2005@gmail.com
+          </a>
+        </div>
         <p className="text-xs opacity-30 tracking-widest font-sans">© 2023 All Rights Reserved.</p>
       </footer>
     </div>

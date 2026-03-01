@@ -1,46 +1,21 @@
-# Astro Starter Kit: Basics
+# 🖋️ The Universal Observer
 
-```sh
-npm create astro@latest -- --template basics
-```
+> "Life may not seem to present an inherent meaning; we live to obtain it."
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+A high-fidelity, minimalist literary portfolio built for author David Zhu. Designed with a "Paper" aesthetic and optimized for long-form reading, this project serves as a digital home for fiction, poetry, and philosophical essays.
 
-## 🚀 Project Structure
+## ✨ Features
+* **Lightning Fast:** Built with [Astro](https://astro.build/), shipping zero JavaScript to the client by default.
+* **Markdown Driven:** Content is managed entirely via simple `.md` files, making it incredibly easy for the author to publish new pieces without touching the code.
+* **Editorial Design:** Utilizes classic serif typography (EB Garamond) paired with highly legible sans-serif UI elements, generous whitespace, and responsive CSS Grid layouts.
+* **Fully Responsive:** Custom CSS ensures a beautiful reading experience on everything from ultra-wide monitors to mobile phones.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Tech Stack
+* **Framework:** Astro
+* **Styling:** Vanilla CSS / CSS Grid / Flexbox
+* **Deployment:** Vercel
+* **Typography:** EB Garamond & Inter (Google Fonts)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## © Copyright & License
+**Code:** The structural code of this website is open-source. 
+**Content:** All literary works, stories, poetry, and essays contained within this repository are the exclusive intellectual property of David Zhu. Unauthorized reproduction, distribution, or commercial use of the written content is strictly prohibited.
