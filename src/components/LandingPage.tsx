@@ -79,7 +79,7 @@ function EssayCard({ writing }: { writing: Writing }) {
         </p>
 
         <div className="mt-auto pt-6 flex items-center text-xs uppercase tracking-widest opacity-70 group-hover:opacity-100 transition-opacity">
-          <span>Read Essay</span>
+          <a href={`/read/${writing.id}`}>Read Essay</a>
           <ArrowRight className="w-3 h-3 ml-2" />
         </div>
       </div>
@@ -160,7 +160,7 @@ function PoetryCard({ writing }: { writing: Writing }) {
         />
         <div className="absolute inset-0 bg-neutral-900/60 group-hover:bg-neutral-900/50 transition-colors duration-500" />
         {/* Grain Overlay */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` }}></div>
+        <a href={`/read/${writing.id}`} className="absolute inset-0 opacity-20 mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` }}></a>
       </div>
 
       <div className="relative z-10 flex flex-col items-center text-neutral-100">

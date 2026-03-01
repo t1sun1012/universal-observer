@@ -1,8 +1,8 @@
 ---
-title: "The Red Agate"
+title: "The Ruddy Agate"
 category: "Fiction"
 snippet: "Day 3: Dear diary, it’s been three days since we moved into the castle in such a remote forest."
-imageUrl: "https://images.pexels.com/photos/5644930/pexels-photo-5644930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+imageUrl: "https://p.turbosquid.com/ts-thumb/o3/lCnpFr/S6to0IvC/00/jpg/1486979095/600x600/fit_q87/b38fc6f31b05ead7ba68b94c248056c351d9a6ee/00.jpg"
 readingTime: "4 min read"
 ---
 Day 3:
