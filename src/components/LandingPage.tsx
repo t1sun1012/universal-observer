@@ -244,7 +244,7 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium tracking-tighter mb-8 leading-[0.9]">
             The Universal<br/>Observer
           </h1>
-          <p className="max-w-2xl mx-auto leading-relaxed opacity-90 font-light italic text-[#000000] text-[32px]">"To pay attention, this is my boundless work."</p>
+          <p className="max-w-2xl mx-auto leading-relaxed opacity-90 font-light italic text-[#000000] dark:text-white text-[32px]">"To pay attention, this is my boundless work."</p>
         </motion.div>
 
         <motion.div 

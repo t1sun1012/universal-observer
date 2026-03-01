@@ -5,7 +5,7 @@ import type { Writing } from './LandingPage';
 export function ReadingPage({ writing }: { writing?: Writing }) {
   if (!writing) {
     return (
-        <div className="min-h-screen flex items-center justify-center">
+        <div className="min-h-screen flex items-center justify-center bg-[#FAF8F5] dark:bg-[#111111] text-[#2B2B2B] dark:text-[#EAEAEA]">
             <p>Essay not found.</p>
             <a href="/" className="ml-4 underline">Back to Home</a>
         </div>
@@ -13,13 +13,13 @@ export function ReadingPage({ writing }: { writing?: Writing }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-[#2B2B2B]" style={{ fontFamily: 'EB Garamond, serif' }}>
+    <div className="min-h-screen bg-[#FAF8F5] dark:bg-[#111111] text-[#2B2B2B] dark:text-[#EAEAEA] transition-colors duration-500" style={{ fontFamily: 'EB Garamond, serif' }}>
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 px-6 py-6 md:py-8 transition-colors duration-300">
         <a
           href="/"
-          className="text-sm md:text-base hover:opacity-70 transition-opacity inline-flex items-center gap-2 bg-[#FAF8F5]/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-[#2B2B2B]/5"
+          className="text-sm md:text-base hover:opacity-70 transition-opacity inline-flex items-center gap-2 bg-[#FAF8F5]/80 dark:bg-[#111111]/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-[#2B2B2B]/5 dark:border-[#EAEAEA]/5"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Collection
         </a>
@@ -34,7 +34,7 @@ export function ReadingPage({ writing }: { writing?: Writing }) {
             className="w-full h-full object-cover opacity-60"
             />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8F5] via-[#FAF8F5]/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8F5] via-[#FAF8F5]/20 to-transparent dark:from-[#111111] dark:via-[#111111]/20"></div>
         
         <div className="absolute bottom-0 left-0 w-full p-6 pb-12 flex flex-col items-center justify-end text-center z-10">
           <motion.div
@@ -68,7 +68,7 @@ export function ReadingPage({ writing }: { writing?: Writing }) {
               const restOfParagraph = paragraph.slice(1);
               
               return (
-                <p key={index} className="text-[#2B2B2B]/90">
+                <p key={index} className="text-[#2B2B2B]/90 dark:text-[#EAEAEA]/90">
                   <span className="float-left text-7xl md:text-8xl font-medium leading-[0.8] pr-3 pt-2 mr-2 font-serif">
                     {firstLetter}
                   </span>
@@ -78,7 +78,7 @@ export function ReadingPage({ writing }: { writing?: Writing }) {
             }
             
             return (
-              <p key={index} className="text-[#2B2B2B]/80 indent-8 md:indent-12">
+              <p key={index} className="text-[#2B2B2B]/80 dark:text-[#EAEAEA]/80 indent-8 md:indent-12">
                 {paragraph}
               </p>
             );
@@ -87,16 +87,16 @@ export function ReadingPage({ writing }: { writing?: Writing }) {
 
         {/* Divider */}
         <div className="my-16 flex justify-center opacity-30">
-            <div className="w-2 h-2 rounded-full bg-[#2B2B2B] mx-2"></div>
-            <div className="w-2 h-2 rounded-full bg-[#2B2B2B] mx-2"></div>
-            <div className="w-2 h-2 rounded-full bg-[#2B2B2B] mx-2"></div>
+            <div className="w-2 h-2 rounded-full bg-[#2B2B2B] dark:bg-[#EAEAEA] mx-2"></div>
+            <div className="w-2 h-2 rounded-full bg-[#2B2B2B] dark:bg-[#EAEAEA] mx-2"></div>
+            <div className="w-2 h-2 rounded-full bg-[#2B2B2B] dark:bg-[#EAEAEA] mx-2"></div>
         </div>
 
         {/* Back to Home Link at Bottom */}
         <div className="text-center">
           <a
             href="/"
-            className="text-lg hover:text-[#2B2B2B]/60 transition-colors inline-flex items-center gap-2 italic font-serif"
+            className="text-lg hover:text-[#2B2B2B]/60 dark:hover:text-[#EAEAEA]/60 transition-colors inline-flex items-center gap-2 italic font-serif"
           >
             Return to the Library
           </a>
