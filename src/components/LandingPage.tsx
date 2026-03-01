@@ -112,7 +112,7 @@ function FictionCard({ writing }: { writing: Writing }) {
         <div className="relative z-10 h-full flex flex-col justify-end p-8 md:p-12 text-neutral-100">
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-4 opacity-70">
-              <span className="text-xs uppercase tracking-[0.2em]">Modern Fiction</span>
+              <span className="text-xs uppercase tracking-[0.2em]">Fiction</span>
               <span className="w-1 h-1 bg-current rounded-full"></span>
               <span className="text-xs uppercase tracking-[0.2em]">{writing.readingTime}</span>
             </div>
@@ -289,12 +289,12 @@ export function LandingPage({ writings }: { writings: Writing[] }) {
           </div>
         </section>
 
-        {/* Category 2: Modern Fiction */}
+        {/* Category 2: Fiction */}
         <section id="fiction" className="scroll-mt-32">
           <div className="flex items-end justify-between mb-12 border-b border-neutral-200 dark:border-neutral-800 pb-4">
             <div>
               <span className="text-xs font-sans tracking-[0.2em] uppercase opacity-50 block mb-2">Category 02</span>
-              <h2 className="text-3xl md:text-4xl font-medium">Modern Fiction</h2>
+              <h2 className="text-3xl md:text-4xl font-medium">Fiction</h2>
             </div>
             <p className="hidden md:block max-w-md text-sm opacity-60 text-right font-serif italic">
               "Cinematic, moody, and serendipitous."

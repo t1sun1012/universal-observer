@@ -63,7 +63,7 @@ export function ReadingPage({ writing }: { writing?: Writing }) {
             className="prose-custom text-lg md:text-xl leading-relaxed space-y-8"
         >
           {writing.content.split('\n\n').map((paragraph, index) => {
-            if (index === 0) {
+            if (index === 0 && writing.category !== 'Poetry') {
               const firstLetter = paragraph.charAt(0);
               const restOfParagraph = paragraph.slice(1);
               
