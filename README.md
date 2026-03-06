@@ -8,7 +8,7 @@
 
 A high-fidelity, minimalist literary portfolio built for author David Zhu. Designed with a "Paper" aesthetic and optimized for long-form reading, this project serves as a digital home for fiction, poetry, and philosophical essays.
 
-![Project Preview](./public/images/preview.png)
+![Project Preview](./public/images/home_preview.png)
 
 ## ✨ Features
 
