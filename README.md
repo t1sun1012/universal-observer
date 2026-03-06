@@ -1,6 +1,8 @@
 # 🖋️ The Universal Observer
 
 [![Website](https://img.shields.io/badge/Website-The%20Universal%20Observer-2B2B2B)](https://www.universalobserver.com/)
+![Astro](https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 > "Life may not seem to present an inherent meaning; we live to obtain it."
 
