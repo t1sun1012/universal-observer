@@ -29,7 +29,11 @@ Cudworth, R. (1678) “The True Intellectual System of the Universe and the Pres
 
 Kaldas, S. (2015) Descartes versus Cudworth on the moral worth of animals, Philosophy Now: a magazine of ideas. 
 
-Available at:https://philosophynow.org/issues/108/Descartes_versus_Cudworth_On_The_Moral_Worth_of_Animals 
+Available at:https://philosophynow.org/issues/108/
+
+Descartes_versus_Cudworth_
+
+On_The_Moral_Worth_of_Animals 
 
 (Accessed: October 4, 2022).
 
